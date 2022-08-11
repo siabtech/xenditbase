@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 80;
+const port = process.env.PORT || 9999;
 const router = require('./router')
 
 app.set('view engine', 'ejs');
