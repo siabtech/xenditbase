@@ -5,7 +5,8 @@ const x = new Xendit({
     secretKey: 'xnd_development_yps1XaDZKthvYM9PuY2H4D1CS4CBsMf4cKniEOJnRg24J6Stlm7uLGHewZZtZy',
 });
 
-let server =  'http://54.179.248.179'
+// let server =  'http://54.179.248.179' //aws
+let server =  'https://xenditdase.herokuapp.com/' //heroku
 let name = ''
 let metode = ''
 let terbilang = ''
