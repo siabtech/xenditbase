@@ -6,8 +6,8 @@ const x = new Xendit({
 });
 
 // let server =  'http://54.179.248.179' //aws
-let server =  'https://xenditdase.herokuapp.com/' //heroku
-let mainform = "https://xenditform.herokuapp.com/"
+let server =  'https://xenditdase.herokuapp.com' //heroku
+let mainform = "https://xenditform.herokuapp.com"
 let name = ''
 let metode = ''
 let terbilang = ''
@@ -199,7 +199,7 @@ async function success(req, res) {
     // save data to db 
     
     setTimeout(function () {
-        res.redirect(`${mainform}success/?name=${name}&metode=${metode}&terbilang=${terbilang}&id=${reference_id}`);
+        res.redirect(`${mainform}/success/?name=${name}&metode=${metode}&terbilang=${terbilang}&id=${reference_id}`);
     }, 2000);
     // process.exit(0);
 }
