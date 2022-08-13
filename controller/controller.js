@@ -199,7 +199,7 @@ async function success(req, res) {
     // save data to db 
     
     setTimeout(function () {
-        res.redirect(`${mainform}/success/?name=${name}&metode=${metode}&terbilang=${terbilang}&id=${reference_id}`);
+        res.redirect(`${mainform}success/?name=${name}&metode=${metode}&terbilang=${terbilang}&id=${reference_id}`);
     }, 2000);
     // process.exit(0);
 }
