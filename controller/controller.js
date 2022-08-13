@@ -7,6 +7,7 @@ const x = new Xendit({
 
 // let server =  'http://54.179.248.179' //aws
 let server =  'https://xenditdase.herokuapp.com/' //heroku
+let mainform = "https://xenditform.herokuapp.com/"
 let name = ''
 let metode = ''
 let terbilang = ''
@@ -76,7 +77,7 @@ async function ewallet(req, res) {
         if (metode === 'ID_OVO') {
             dat = {
                 status: resp.status,
-                link: 'http://localhost:8888/xendit/oke'
+                link: server + '/xendit/success'
             }
         } else {
             dat = {
@@ -198,7 +199,7 @@ async function success(req, res) {
     // save data to db 
     
     setTimeout(function () {
-        res.redirect(`http://localhost:3000/success/?name=${name}&metode=${metode}&terbilang=${terbilang}&id=${reference_id}`);
+        res.redirect(`${mainform}/success/?name=${name}&metode=${metode}&terbilang=${terbilang}&id=${reference_id}`);
     }, 2000);
     // process.exit(0);
 }
