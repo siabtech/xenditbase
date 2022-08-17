@@ -6,7 +6,7 @@ const x = new Xendit({
 });
 
 // let server =  'http://54.179.248.179' //aws
-let server =  'https://xenditdase.herokuapp.com' //heroku
+let server =  'https://xenditbase.herokuapp.com' //heroku
 let mainform = "https://aaaaa-aal.herokuapp.com"
 let name = ''
 let metode = ''
